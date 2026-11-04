@@ -1,5 +1,5 @@
 # Toda_Kota_Kurumba
-This Directory Contain the Script which have been generated as by product of Research paper on Nilgiri Genomics. 
+This Directory Contain the Script which have been generated as by product of Research paper on Nilgiri tribe Genomics. 
 
 
 At present the manuscript is under preparations
