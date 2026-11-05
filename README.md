@@ -11,5 +11,4 @@ If you use any of script from this or our Shiny app (AdmixScaffold) which we hav
 
 
 
-~~ Shailesh Desai
-
+~SD
