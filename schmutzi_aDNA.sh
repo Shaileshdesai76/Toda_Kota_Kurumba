@@ -16,11 +16,14 @@ do
     echo "======================================="
     echo "Processing: $BASE"
     echo "======================================="
+    TMPBAM="dedup/${BASE}.tmp.bam"
 
     # Regenerate MD tags
     MDBAM="dedup/${BASE}.dedup_MD.bam"
-    samtools calmd -b "$BAM" "$REF" > "$MDBAM"
-    samtools index "$MDBAM"
+    samtools calmd -b "$BAM" "$REF" > "$TMPBAM" &&
+    samtools index "$TMPBAM" &&
+    mv "$TMPBAM" "$BAM" &&
+    mv "${TMPBAM}.bai" "${BAM}.bai"
 
     PREFIX="${OUTDIR}/${BASE}_MT_MD"
 
